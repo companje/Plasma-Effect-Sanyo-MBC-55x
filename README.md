@@ -2,9 +2,9 @@
 
 <img src="plasma.gif" width="400" height="250" alt="Plasma-effect op de Sanyo MBC-550" width="640">
 
-Dit is het resultaat van `app.asm`: een bewegend plasma-effect voor de
-Sanyo MBC-550/MBC-55x. Het effect wordt rechtstreeks in de RGB-video-RAM
-getekend en combineert drie ideeën die op deze hardware goed samenwerken:
+Een bewegend plasma-effect voor de Sanyo MBC-550/MBC-55x. Het effect wordt 
+rechtstreeks in de RGB-video-RAM getekend en combineert drie ideeën die op 
+deze hardware goed samenwerken:
 
 - een **3-bit RGB-gradient**: de drie bitplanes leveren de acht RGB-kleuren;
   patronen met `00h`, `55h`, `AAh` en `FFh` ditheren tussen die kleuren en
