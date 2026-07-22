@@ -75,15 +75,4 @@ sh build.sh
 
 Het script assembleert `app.asm`, berekent automatisch hoeveel sectoren stage
 2 nodig heeft, bouwt een 180 KiB floppy-image en start `mame mbc55x` met 256 KiB
-RAM. Gegenereerde `*.img`, `*.bin` en `*.lst`-bestanden zijn tijdelijke
-build-output.
-
-Voor een variant kun je `app.asm` kopiëren en de basisnaam meegeven:
-
-```sh
-sh build.sh app-my-effect
-```
-
-De belangrijkste hardwaredetails zijn afgeleid en getest in de MAME
-`mbc55x`-driver. De bootloader gebruikt tijdens het laden de groene plane als
-indicator; daarom wist `setup_video` bij de start alle drie planes.
+RAM. 
