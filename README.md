@@ -1,4 +1,4 @@
-# Sanyo MBC-550 plasma
+# Sanyo MBC-550/555 plasma effect
 
 <img src="plasma.gif" width="400" height="250" alt="Plasma-effect op de Sanyo MBC-550" width="640">
 
