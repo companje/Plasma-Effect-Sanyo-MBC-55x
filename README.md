@@ -1,6 +1,6 @@
 # Sanyo MBC-550 plasma
 
-<img src="plasma.gif" alt="Plasma-effect op de Sanyo MBC-550" width="640">
+<img src="plasma.gif" width="400" height="250" alt="Plasma-effect op de Sanyo MBC-550" width="640">
 
 Dit is het resultaat van `app.asm`: een bewegend plasma-effect voor de
 Sanyo MBC-550/MBC-55x. Het effect wordt rechtstreeks in de RGB-video-RAM
