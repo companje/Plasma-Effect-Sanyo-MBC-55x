@@ -38,7 +38,8 @@ img=`pwd`/$base.img
 mame mbc55x \
 -flop1 "$img" \
 -ramsize 256K -skip_gameinfo -window -ui_active \
--nomaximize -resolution0 800x600 -prescale 2 -gamma 3 -contrast 1.5
+-nomaximize -resolution0 800x600 -prescale 2 -gamma 3 -contrast 1.5 \
+-aviwrite plasma-material-palette.gif
 
 rm -rf cfg
 rm app.img

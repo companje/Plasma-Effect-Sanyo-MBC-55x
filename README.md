@@ -8,7 +8,7 @@ deze hardware goed samenwerken:
 
 - een **3-bit RGB-gradient**: de drie bitplanes leveren de acht RGB-kleuren;
   patronen met `00h`, `55h`, `AAh` en `FFh` ditheren tussen die kleuren en
-  maken een vloeiender gradient met een kleine tabel van 32 cellen;
+  maken een vloeiender gradient met een kleine tabel van 16 cellen;
 - drie onafhankelijk verschuivende sinusgolven, aangevuld met een diagonale
   component, zodat het beeld niet in een eenvoudig rij- of kolompatroon valt;
 - **interleaved/strided rendering**: elke 8×4-pixelcel wordt in een
@@ -64,6 +64,9 @@ plasma.gif
 `app.asm` is zelf stage 2 (`org 0`, `cpu 8086`) en include't `video.asm` aan
 het einde. `setup` initialiseert de stack en video, bouwt de sinus-tabel en
 start de renderlus.
+
+Het palette wisselen kan bovenaan in `app.asm` via `PALETTE_CELLS`: kies `16`
+voor het palette uit de afbeelding of `32` voor het oorspronkelijke palette.
 
 ## Bouwen en uitvoeren
 
